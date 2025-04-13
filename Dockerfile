@@ -13,7 +13,7 @@ COPY . .
 
 
 # Expose FastAPI default port
-EXPOSE 8000
+EXPOSE 8001
 
 # Command to run the API
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8001"]
