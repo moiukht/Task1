@@ -11,8 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 
-RUN python -m nltk.downloader punkt
-RUN python -m nltk.downloader wordnet
+
 # Expose FastAPI default port
 EXPOSE 8001
 
