@@ -6,6 +6,8 @@ import os
 from datetime import datetime
 from nlp import handle_user_message
 from db.connection import database_connect
+import nltk
+nltk.download('punkt') 
 app = FastAPI()
 @app.get('/')
 
