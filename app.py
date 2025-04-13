@@ -9,6 +9,7 @@ from db.connection import database_connect
 app = FastAPI()
 @app.get('/')
 
+
 async def root():
     return {"message": "Welcome to Savory Haven API"}
 
