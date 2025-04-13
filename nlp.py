@@ -3,8 +3,8 @@ from pymongo import MongoClient
 import nltk
 import re
 from db.connection import database_connect
-# nltk.download('punkt')
-# nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from datetime import datetime
