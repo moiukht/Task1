@@ -10,7 +10,7 @@ app = FastAPI()
 @app.get('/')
 
 async def root():
-    return {'example': 'examfasfple', 'data': 0}
+    return {"message": "Welcome to Savory Haven API"}
 
 #MONGODB CONNECTION
 db = database_connect() 
