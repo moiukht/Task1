@@ -1,0 +1,423 @@
+{
+    "restaurant": {
+      "name": "Savory Haven",
+      "address": {
+        "street": "789 Gourmet Avenue",
+        "city": "Flavor Town",
+        "state": "CA",
+        "zip": "90210",
+        "country": "USA"
+      },
+      "contact": {
+        "phone": "+1 (555) 987-6543",
+        "email": "info@savoryhaven.com",
+        "website": "www.savoryhaven.com"
+      },
+      "hours": {
+        "monday": {"open": "11:00", "close": "22:00"},
+        "tuesday": {"open": "11:00", "close": "22:00"},
+        "wednesday": {"open": "11:00", "close": "22:00"},
+        "thursday": {"open": "11:00", "close": "23:00"},
+        "friday": {"open": "11:00", "close": "00:00"},
+        "saturday": {"open": "10:00", "close": "00:00"},
+        "sunday": {"open": "10:00", "close": "21:00"}
+      },
+      "cuisine_types": ["Italian", "Mediterranean", "American Fusion"],
+      "features": [
+        "Outdoor Seating",
+        "Wheelchair Accessible",
+        "Full Bar",
+        "Live Music Fridays",
+        "Private Dining Room"
+      ],
+      "social_media": {
+        "facebook": "facebook.com/savoryhaven",
+        "instagram": "@savoryhaven",
+        "twitter": "@savoryhaven"
+      },
+      "about": "Founded in 2010, Savory Haven brings authentic Italian flavors with a modern twist to Flavor Town. Our chef, Marco Bellini, trained in Tuscany and brings 20 years of culinary expertise to every dish."
+    },
+  
+    "staff": [
+      {
+        "id": 1,
+        "name": "Marco Bellini",
+        "position": "Executive Chef",
+        "bio": "Trained in Florence with 20 years experience specializing in Tuscan cuisine.",
+        "image": "chef_marco.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Sophia Chen",
+        "position": "Head Pastry Chef",
+        "bio": "Award-winning pastry chef specializing in Italian desserts.",
+        "image": "chef_sophia.jpg"
+      }
+    ],
+  
+    "menu": {
+      "categories": [
+        {
+          "id": 1,
+          "name": "Antipasti",
+          "description": "Traditional Italian starters to begin your meal",
+          "items": [
+            {
+              "id": 101,
+              "name": "Bruschetta Classica",
+              "description": "Toasted artisan bread topped with vine-ripened tomatoes, fresh basil, garlic, and extra virgin olive oil",
+              "price": 9.50,
+              "vegetarian": true,
+              "vegan": false,
+              "gluten_free": false,
+              "calories": 320,
+              "popular": true,
+              "chef_recommended": true
+            },
+            {
+              "id": 102,
+              "name": "Calamari Fritti",
+              "description": "Crispy fried squid served with spicy arrabbiata sauce and lemon aioli",
+              "price": 14.95,
+              "vegetarian": false,
+              "vegan": false,
+              "gluten_free": false,
+              "calories": 480,
+              "popular": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Insalate",
+          "description": "Fresh salads featuring seasonal ingredients",
+          "items": [
+            {
+              "id": 201,
+              "name": "Caprese Salad",
+              "description": "Fresh mozzarella, vine-ripened tomatoes, and basil drizzled with balsamic glaze",
+              "price": 12.95,
+              "vegetarian": true,
+              "vegan": false,
+              "gluten_free": true,
+              "calories": 290
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Pasta",
+          "description": "Handmade pasta prepared daily",
+          "items": [
+            {
+              "id": 301,
+              "name": "Pappardelle al Ragu",
+              "description": "Wide ribbon pasta with slow-braised beef ragu, red wine, and parmigiano-reggiano",
+              "price": 22.95,
+              "vegetarian": false,
+              "vegan": false,
+              "gluten_free": false,
+              "calories": 650,
+              "chef_recommended": true
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Pizza",
+          "description": "Wood-fired Neapolitan style pizzas",
+          "items": [
+            {
+              "id": 401,
+              "name": "Quattro Formaggi",
+              "description": "White pizza with mozzarella, gorgonzola, fontina, and parmigiano cheeses",
+              "price": 18.95,
+              "vegetarian": true,
+              "vegan": false,
+              "gluten_free": false,
+              "calories": 820
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Dolci",
+          "description": "Decadent desserts to complete your meal",
+          "items": [
+            {
+              "id": 501,
+              "name": "Tiramisu Classico",
+              "description": "Traditional Italian dessert with layers of espresso-soaked ladyfingers and mascarpone cream",
+              "price": 9.95,
+              "vegetarian": true,
+              "vegan": false,
+              "gluten_free": false,
+              "calories": 420,
+              "popular": true
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Bevande",
+          "description": "Wines, cocktails, and other beverages",
+          "items": [
+            {
+              "id": 601,
+              "name": "House Red Wine",
+              "description": "Glass of our signature Chianti Classico",
+              "price": 12.00,
+              "alcoholic": true,
+              "size": "6oz"
+            }
+          ]
+        }
+      ],
+      "specials": {
+        "happy_hour": {
+          "times": "16:00-18:00",
+          "days": ["monday", "tuesday", "wednesday", "thursday"],
+          "offers": [
+            "$5 select appetizers",
+            "$2 off all cocktails",
+            "Half-price wine by the glass"
+          ]
+        },
+        "weekly_specials": [
+          {
+            "name": "Monday Pasta Night",
+            "description": "All pasta dishes 20% off every Monday evening",
+            "valid_days": ["monday"]
+          }
+        ]
+      }
+    },
+  
+    "tables": [
+      {
+        "id": 1,
+        "number": 101,
+        "capacity": 2,
+        "location": "window",
+        "wheelchair_accessible": true,
+        "outdoor": false
+      },
+      {
+        "id": 2,
+        "number": 102,
+        "capacity": 4,
+        "location": "main dining",
+        "wheelchair_accessible": true,
+        "outdoor": false
+      },
+      {
+        "id": 3,
+        "number": 201,
+        "capacity": 6,
+        "location": "private room",
+        "wheelchair_accessible": true,
+        "outdoor": false
+      },
+      {
+        "id": 4,
+        "number": 301,
+        "capacity": 8,
+        "location": "patio",
+        "wheelchair_accessible": false,
+        "outdoor": true
+      }
+    ],
+  
+    "reservations": [
+      {
+        "id": 10001,
+        "customer": {
+          "name": "Emily Johnson",
+          "phone": "+1 (555) 123-4567",
+          "email": "emily.j@example.com",
+          "loyalty_member": true,
+          "member_since": "2021-03-15"
+        },
+        "details": {
+          "date": "2023-06-15",
+          "time": "19:30",
+          "party_size": 4,
+          "table_preference": "window",
+          "special_requests": "Anniversary celebration - please bring dessert with candle",
+          "status": "confirmed",
+          "created_at": "2023-05-20T14:32:10Z"
+        }
+      },
+      {
+        "id": 10002,
+        "customer": {
+          "name": "David Kim",
+          "phone": "+1 (555) 987-6543",
+          "email": "david.k@example.com",
+          "loyalty_member": false
+        },
+        "details": {
+          "date": "2023-06-16",
+          "time": "20:00",
+          "party_size": 2,
+          "special_requests": "Vegetarian options needed",
+          "status": "pending",
+          "created_at": "2023-05-22T09:15:33Z"
+        }
+      }
+    ],
+  
+    "orders": [
+      {
+        "id": 50001,
+        "customer": {
+          "name": "Sarah Williams",
+          "phone": "+1 (555) 456-7890",
+          "delivery_address": "123 Main St, Apt 4B, Flavor Town, CA 90210"
+        },
+        "details": {
+          "type": "delivery",
+          "items": [
+            {
+              "menu_item_id": 101,
+              "name": "Bruschetta Classica",
+              "quantity": 1,
+              "special_instructions": "Extra garlic please"
+            },
+            {
+              "menu_item_id": 301,
+              "name": "Pappardelle al Ragu",
+              "quantity": 2,
+              "special_instructions": "One with gluten-free pasta"
+            }
+          ],
+          "subtotal": 55.40,
+          "tax": 4.43,
+          "delivery_fee": 5.99,
+          "tip": 10.00,
+          "total": 75.82,
+          "status": "delivered",
+          "order_time": "2023-05-15T18:45:22Z",
+          "delivery_time": "2023-05-15T19:32:10Z"
+        }
+      },
+      {
+        "id": 50002,
+        "customer": {
+          "name": "Michael Brown",
+          "phone": "+1 (555) 789-0123"
+        },
+        "details": {
+          "type": "dine-in",
+          "table_number": 102,
+          "items": [
+            {
+              "menu_item_id": 102,
+              "name": "Calamari Fritti",
+              "quantity": 1
+            },
+            {
+              "menu_item_id": 401,
+              "name": "Quattro Formaggi Pizza",
+              "quantity": 1,
+              "special_instructions": "Add mushrooms"
+            }
+          ],
+          "subtotal": 33.90,
+          "tax": 2.71,
+          "tip": 7.00,
+          "total": 43.61,
+          "status": "completed",
+          "order_time": "2023-05-16T19:15:45Z",
+          "completion_time": "2023-05-16T20:22:30Z"
+        }
+      }
+    ],
+  
+    "reviews": [
+      {
+        "id": 1,
+        "customer_name": "Jessica L.",
+        "rating": 5,
+        "date": "2023-04-10",
+        "comment": "The pasta was absolutely divine! Service was impeccable and the atmosphere was perfect for our anniversary dinner.",
+        "response": {
+          "manager_name": "Luigi Romano",
+          "text": "Thank you for choosing us for your special occasion! We're delighted you enjoyed your experience."
+        }
+      },
+      {
+        "id": 2,
+        "customer_name": "Mark T.",
+        "rating": 4,
+        "date": "2023-05-05",
+        "comment": "Great food but the wait for our table was longer than expected."
+      }
+    ],
+  
+    "faqs": [
+      {
+        "category": "Reservations",
+        "questions": [
+          {
+            "question": "How far in advance can I make a reservation?",
+            "answer": "We accept reservations up to 3 months in advance."
+          },
+          {
+            "question": "Do you take reservations for large groups?",
+            "answer": "Yes, we can accommodate groups up to 20 people in our private dining room. Please call for parties of 8 or more."
+          }
+        ]
+      },
+      {
+        "category": "Menu",
+        "questions": [
+          {
+            "question": "Do you have vegetarian options?",
+            "answer": "Yes, we have several vegetarian dishes marked on our menu with a (V) symbol."
+          },
+          {
+            "question": "Can you accommodate food allergies?",
+            "answer": "Our staff is trained to handle food allergy requests. Please inform your server of any allergies."
+          }
+        ]
+      }
+    ],
+  
+    "promotions": [
+      {
+        "name": "Summer Wine Pairing",
+        "description": "Enjoy a 3-course meal with wine pairings for $65 per person",
+        "valid_from": "2023-06-01",
+        "valid_to": "2023-08-31",
+        "terms": "Available Tuesday-Thursday evenings only. Reservations required."
+      },
+      {
+        "name": "Birthday Special",
+        "description": "Get a free dessert when you dine with us on your birthday!",
+        "terms": "Valid with ID showing birth date. Dine-in only."
+      }
+    ],
+  
+    "loyalty_program": {
+      "name": "Savory Circle",
+      "benefits": [
+        "Earn 1 point for every $1 spent",
+        "Free appetizer after 100 points",
+        "Birthday reward",
+        "Exclusive event invitations"
+      ],
+      "tiers": [
+        {
+          "name": "Silver",
+          "points_required": 0,
+          "benefits": ["Basic rewards"]
+        },
+        {
+          "name": "Gold",
+          "points_required": 500,
+          "benefits": ["Priority reservations", "Complimentary dessert monthly"]
+        }
+      ]
+    }
+  }

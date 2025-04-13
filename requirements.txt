@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+nltk
+transformers
+pymongo
+python-dotenv
+requests
+dateparser
+sentence-transformers
+torch
