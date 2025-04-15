@@ -3,7 +3,8 @@ from pymongo import MongoClient
 import nltk
 import re
 from db.connection import database_connect
-nltk.download('punkt')
+nltk.download('punkt', download_dir='C:/Users/User/nltk_data')
+nltk.download('punkt_tab' , download_dir='C:/Users/User/nltk_data')
 nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
