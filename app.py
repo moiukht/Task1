@@ -7,10 +7,6 @@ from datetime import datetime
 from nlp import handle_user_message
 from db.connection import database_connect
 import nltk
-nltk.download('punkt', download_dir='C:/Users/User/nltk_data')
-nltk.download('punkt_tab' , download_dir='C:/Users/User/nltk_data')
-nltk.download('wordnet')
-from nltk.tokenize import word_tokenize
 app = FastAPI()
 @app.get('/')
 
